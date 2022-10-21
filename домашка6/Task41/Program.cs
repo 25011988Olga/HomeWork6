@@ -8,11 +8,27 @@ Console.Write("Введите число 3: ");
 int c = Convert.ToInt32(Console.ReadLine());
 Console.Write("Введите число 4: ");
 int d = Convert.ToInt32(Console.ReadLine());
-int count =0;
+int positivNumber = 0;
+int currentValue = a;
+int limit = d;
+
 {
-while(a>0) count++;
-while(b>0) count++;
-while(c>0) count++;
-while(d>0) count++;
+if(a>0)
+{
+   positivNumber++; 
 }
-Console.WriteLine($"Кол-во элементов больше 0: {count}");
+if(b>0)
+{
+   positivNumber++;  
+}
+if(c>0)
+{
+    positivNumber++; 
+}
+if(d>0)
+{
+    positivNumber++; 
+}
+}
+
+Console.WriteLine("Количество чисел больше 0: " + positivNumber);
